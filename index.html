@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burger House - Página Inicial</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <h1>Burger House</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">Sobre</a></li>
+        <li><a href="contact.html">Contato</a></li>
+      </ul>
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="slider">
+        <div class="slide active">
+          <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Hambúrguer Clássico">
+          <div class="slide-content">
+            <h2>Bem-vindo à Burger House</h2>
+            <p>Os melhores hambúrgueres artesanais da cidade!</p>
+            <a href="menu.html" class="btn">Ver Menu</a>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Hambúrguer Gourmet">
+          <div class="slide-content">
+            <h2>Ingredientes Frescos</h2>
+            <p>Qualidade e sabor em cada mordida.</p>
+            <a href="menu.html" class="btn">Ver Menu</a>
+          </div>
+        </div>
+      </div>
+      <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+      <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Burger House. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

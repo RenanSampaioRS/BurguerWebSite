@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burger House - Contato</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <h1>Burger House</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">Sobre</a></li>
+        <li><a href="contact.html" class="active">Contato</a></li>
+      </ul>
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact">
+      <h2>Faça seu Pedido</h2>
+      <form id="order-form" class="order-form">
+        <div class="form-group">
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="item">Item do Menu:</label>
+          <select id="item" name="item" required>
+            <option value="" disabled selected>Selecione um item</option>
+            <option value="Hambúrguer Clássico|25">Hambúrguer Clássico - R$ 25,00</option>
+            <option value="Hambúrguer Gourmet|35">Hambúrguer Gourmet - R$ 35,00</option>
+            <option value="Batata Frita|15">Batata Frita - R$ 15,00</option>
+            <option value="Refrigerante|7">Refrigerante - R$ 7,00</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="quantity">Quantidade:</label>
+          <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+        </div>
+        <div class="form-group">
+          <label for="total">Total:</label>
+          <input type="text" id="total" name="total" readonly>
+        </div>
+        <button type="submit" class="btn">Enviar Pedido</button>
+        <p id="form-message"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Burger House. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
