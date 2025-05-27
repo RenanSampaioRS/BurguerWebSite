@@ -1,19 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Firebase Configuration
-  const firebaseConfig = {
-    apiKey: "AIzaSyALAj0u6WUmHQ2HDE-YwDzM0UibzUQC3pY",
-    authDomain: "burger-house-3afa2.firebaseapp.com",
-    projectId: "burger-house-3afa2",
-    storageBucket: "burger-house-3afa2.firebasestorage.app",
-    messagingSenderId: "668856136508",
-    appId: "1:668856136508:web:78a440bc10f81c53cc6439",
-    measurementId: "G-TC2GEZLJWR"
-  };
-
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  const db = firebase.firestore();
-
   // Menu toggle
   const menuToggle = document.querySelector('.menu-toggle');
   const navLinks = document.querySelector('.nav-links');
@@ -54,6 +39,21 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Form validation and Firestore submission
+  // Firebase Configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyALAj0u6WUmHQ2HDE-YwDzM0UibzUQC3pY",
+      authDomain: "burger-house-3afa2.firebaseapp.com",
+      projectId: "burger-house-3afa2",
+      storageBucket: "burger-house-3afa2.firebasestorage.app",
+      messagingSenderId: "668856136508",
+      appId: "1:668856136508:web:78a440bc10f81c53cc6439",
+      measurementId: "G-TC2GEZLJWR"
+    };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+
   const orderForm = document.getElementById('order-form');
   const totalInput = document.getElementById('total');
   const itemSelect = document.getElementById('item');
